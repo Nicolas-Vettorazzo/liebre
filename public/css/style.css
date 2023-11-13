@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+h4{
+    width: 100vw;
+    text-align: center;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+
+.burger-menu{
+    text-align: center;
+    color: white;
+    background-color: #03264C;
+    margin: 2% 46%;
+    border-radius: 5px;
+    padding: 8px;
+    
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+
+.Compra{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.src{
+    width: 50%;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;;
+    align-content: center;
+    border: solid 1px #ebebeb;
+    margin: 15px;
+    width: 90%;
+ }
+
+main img{
+    width: 90%;
+    margin: 15px;
+    padding: 5%;
+}
+
+
+footer{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+.src{
+    width: 50px;
+}
+
+h5{
+    font-size: 16px
+}
+
+.Basado{
+    font-size: 24px
+}
+
+footer i{
+    font-size: 2em;
+}
+
+header img{
+    width: 50vw;
+}
+
+.descuento{
+    color: green;
+}
+
+.fa-truck {
+    font-size: 180%;
+    position: relative;
+    border: 1px solid #20c200;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 5px;
+    
+}
+
+.fa-magnifying-glass{
+    font-size: 90%;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 18px;
+    height: 18;
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color: white;
+}
+
+p{
+    padding-left: 5%;
+}
+
+.electrodomesticos{
+    background-color: #fff;
+    margin: 15px; 
+}
+
+.banner{
+    width: 100%;
+}
+
+
+@media (min-width: 361px){
+    .electrodomesticos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .tienda{
+        display: none
+    }
+   
+   
+  };
+
+@media (min-width: 769px){
+    .burger-menu{
+        display: none;
+    }
+    .tienda{
+        display: block;
+    }
+}
+
+.product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.product-desc-box {
+        position: relative;
+}
+
+.Basado{
+    color: #666;;
+}
+
