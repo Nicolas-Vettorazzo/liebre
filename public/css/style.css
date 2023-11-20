@@ -1,169 +1,161 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    }
-
-
-h4{
-    width: 100vw;
-    text-align: center;
 }
 
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: large;
+    font-size: 12px;
+    background-color: var(--Gris-claro);
 }
 
+header {
+    background-color: var(--Amarillo);
+}
 
-.burger-menu{
+.barra-superior{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    color: white;
-    background-color: #03264C;
-    margin: 2% 46%;
-    border-radius: 5px;
-    padding: 8px;
-    
+    align-items: center;
+    padding: 10px;
 }
 
-header{
-    font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
+.logo-barra-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.Compra{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.src{
+.logo {
     width: 50%;
 }
 
-main{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;;
-    align-content: center;
-    border: solid 1px #ebebeb;
-    margin: 15px;
-    width: 90%;
- }
-
-main img{
-    width: 90%;
-    margin: 15px;
-    padding: 5%;
+.barra-busqueda{
+    width: 50%;
+    display: flex;
 }
 
-
-footer{
+.Compra {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background-color: white;
-}
-.src{
-    width: 50px;
+    font-weight: 400;
 }
 
-h5{
-    font-size: 16px
+.barra-inferior{
+    display: none;
 }
 
-.Basado{
-    font-size: 24px
+.barra-inferior ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
-footer i{
-    font-size: 2em;
+.barra-inferior li{
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0px 5px;
 }
 
-header img{
-    width: 50vw;
+.barra-inferior a{
+    color: black;
+    text-decoration: none;
 }
 
-.descuento{
-    color: green;
-}
-
-.fa-truck {
-    font-size: 180%;
-    position: relative;
-    border: 1px solid #20c200;
-    border-radius: 25px;
-    width: 40px;
-    height: 40px;
-    padding-top: 5px;
-    padding-left: 5px;
-    
-}
-
-.fa-magnifying-glass{
-    font-size: 90%;
-    position: relative;
-    border: 1px solid black;
+.burger-menu {
+    text-align: center;
+    color: white;
+    background-color: var(--Celeste);
+    margin: 2% 46%;
     border-radius: 5px;
-    width: 18px;
-    height: 18;
-    padding-top: 2px;
-    padding-left: 2px;
+    padding: 8px;
+}
+
+.banner {
+    max-width: 100%;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+main {
+    background-color: var(--Gris-claro);
+    margin: auto;
+    width: 90%;
+}
+
+footer {
+    font-size: 14px;
     background-color: white;
+    padding: 25px;
+    color: var(--Gris-oscuro);
 }
 
-p{
-    padding-left: 5%;
+footer article {
+    text-align: center;
+    padding-bottom: 40px;
 }
 
-.electrodomesticos{
-    background-color: #fff;
-    margin: 15px; 
+article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--Celeste);
+    transition: all 0.5s ease;
 }
 
-.banner{
-    width: 100%;
+article i:hover{
+    color: #0022AA;
+    font-size: 3em;
 }
 
+.copyright {
+    font-weight: 400;
+}
 
-@media (min-width: 361px){
-    .electrodomesticos{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+@media (min-width: 768px) {
+    .barra-superior{
+        flex-wrap: nowrap;
     }
-    .tienda{
-        display: none
+    .barra-inferior{
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
     }
-   
-   
-  };
 
-@media (min-width: 769px){
-    .burger-menu{
+    .burger-menu {
         display: none;
     }
-    .tienda{
-        display: block;
-    }
+
 }
 
-.product-desc-box > .product-delivery-icon{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+@media (min-width: 1024px) {
+    .barra-superior{
+        justify-content: space-between;
     }
 
-.product-desc-box {
-        position: relative;
-}
+    .logo-barra-busqueda{
+        justify-content: space-between;
+    }
 
-.Basado{
-    color: #666;;
-}
+    .barra-busqueda{
+        padding-left: 80px;
+    }
 
+    .barra-inferior li{
+        padding: 10px;
+    }
+
+}

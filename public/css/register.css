@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.documento{
+    text-align: justify;
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    border: solid 0px;
+    padding: 5px;
+    border-radius: 5px;
+    color:var( --Gris-oscuro)
+}
+
+.invisible{
+    color: var( --Gris-claro);
+    padding: 10px;
+}
+
+.textos{
+    text-align: justify;
+}
+
+.empresario input{
+    margin: 0px 5px;
+}
+
+.categorias input{
+    margin: 0px 5px;
+}
+
+.cargar_archivo{
+    margin: 15px;
+    background-color: var(--Gris-oscuro);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.mandar{
+    background-color: var(--Verde);
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+  
+}
+
+.home{
+    text-align: center;
+    color: white;
+    background-color: var(--Celeste);
+    border-radius: 5px;
+    padding: 8px;
+    border: solid 0px 
+}
+
+.tacho{
+    background-color: red;
+    border: 0px;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+  
+}
+
+@media (min-width: 768px) {
+    .documento{
+        width: 500px;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+    .documento{
+        width: 700px;
+    }
+    
+    
+}
